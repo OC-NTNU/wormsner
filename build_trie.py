@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 """
 build trie from (partial) export of WORMS database
@@ -94,7 +94,7 @@ def print_trie(node, start_token):
 
 if __name__ == '__main__':
     # Usage example:
-    # wormsner/build_trie.py ../tu_matrix.csv ../worms_trie.pkl
+    # python3 wormsner/build_trie.py ../tu_matrix.csv ../worms_trie.pkl
     import sys
     logging.basicConfig(level=logging.DEBUG)
     csv_fname, pkl_fname = sys.argv[1:3]
